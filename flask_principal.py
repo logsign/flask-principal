@@ -367,7 +367,7 @@ def session_identity_loader():
 def session_identity_saver(identity):
     session['identity.id'] = identity.id
     session['identity.auth_type'] = identity.auth_type
-    session.modified = True
+    session['modified'] = True
 
 
 class Principal(object):
